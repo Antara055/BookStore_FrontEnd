@@ -49,5 +49,27 @@ token:any;
     }
     return this.httpService.getService('/books/priceLtoH',true,header)
   }
-  
+
+  AddingToWishList(reqdata:any)
+  {
+    this.token=localStorage.getItem('token')
+    let header={
+      headers:new HttpHeaders({
+        'Content-Type': ' application/json',
+        'token':this.token
+      })
+    }
+    return this.httpService.postService('/wishlist',reqdata,true,header);
+  }
+
+  getwishlistItems()
+  {
+    this.token=localStorage.getItem('token')
+    let header={
+      headers:new HttpHeaders({
+        'token':this.token
+      })
+    }
+    return this.httpService.getService('/wishlist/',true,header);
+  }
 }

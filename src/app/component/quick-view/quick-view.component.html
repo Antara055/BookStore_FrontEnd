@@ -1,0 +1,64 @@
+<div fxLayout="row" fxLayoutAlign="center start" fxLayout.xs="row" fxFlex.xs="95">
+    <div class="sideTwoImg" fxLayout="column" fxLayoutGap="10px">
+        <div class="image1">
+            <img src="../../../assets/book1.png" id="img1">
+        </div>
+        <div class="image2">
+            <img src="../../../assets/book2.png" id="img2">
+        </div>
+    </div>
+    <div class="imageContainer" fxLayout="column">
+        <div class="container" fxLayout="row">
+            <div class="image">
+                <img src="../../../assets/book1.png" id="img3">
+            </div>
+        </div>
+        <div class="buttonContainer" fxLayout="row" fxLayoutAlign="space-between center">
+            <div>
+                <button mat-raised-button class="addtobag" (click)="addToCartList()">
+                    add to bag
+                </button>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start center" class="addtowishlist">
+                <button mat-flat-button (click)="addToWishList()" class="wishlistbtn">
+                    <mat-icon class="wishlistIcon">favorite</mat-icon>wishlist
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bookDetails" fxLayout="column">
+        <div fxLayout="column">
+            <div class="bookName">
+                {{bookData?.title}}
+            </div>
+            <div class="author">
+                by {{bookData?.author}}
+            </div>
+            <div class="rating" fxLayout="row" fxLayoutAlign="center center">
+                <span>4.5</span>
+                <mat-icon class="starIcon">star</mat-icon>
+            </div>
+
+            <div class="prize" fxLayout="row" fxLayoutGap="10px">
+                <div class="price">
+                    Rs.{{bookData?.o_price}}
+                </div>
+                <div class="discountprice">
+                    <del> Rs.{{bookData?.price}} </del>
+                </div>
+            </div>
+        </div>
+        <mat-divider class="divider"></mat-divider>
+        <div fxLayout="column" fxLayoutAlign="start start">
+            <span class="bookdesc">Book Detail</span>
+            {{bookData?.description}}
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi et<br> possimus quidem
+                veritatis.
+                Quas nesciunt quis, nobis inventore esse voluptatem,<br>corporis quod necessitatibus officiis, natus
+                animi
+                velit. Debitis, eveniet.
+            </p>
+        </div>
+    </div>
+</div>

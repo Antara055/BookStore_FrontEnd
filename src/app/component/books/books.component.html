@@ -1,4 +1,4 @@
-<div fxLayout="row" fxLayoutAlign="space-between center" fxLayout.xs="row" fxLayout.sm="row" >
+<div fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="row" fxLayout.sm="row" >
     <div class="bookCount">
         <span class="books">Books</span>
         <span class="count">({{countBooks}} items)</span>
@@ -18,7 +18,7 @@
     <div class="container" *ngFor="let book of Booklist" fxLayout.sm="column" fxFlex.xs="50" >
 
         <div class="image" fxLayoutAlign="center center" >
-            <img src="../../../assets/book1.png" style="height: 60%; width: 50%;" >
+            <img src="../../../assets/book1.png" (click)="quickview(book)" style="height: 60%; width: 50%;" >
         </div>
         <div class="bookname">
             {{book.title}}
@@ -33,6 +33,9 @@
         <div class="prize" fxLayout="row" fxLayoutGap="5px">
             <div class="prizediv">
                 Rs.{{book.price}}
+            </div>
+            <div style="color: grey;">
+                <del> Rs.{{book.o_price}} </del>
             </div>
         </div>
     </div>

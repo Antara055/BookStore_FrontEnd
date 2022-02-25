@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BookService } from 'src/app/service/book.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { BookService } from 'src/app/service/book.service';
 export class BooksComponent implements OnInit {
   Booklist: any;
   countBooks: any;
-  constructor(private bookService: BookService) { }
+  constructor(private bookService: BookService,private router: Router,) { }
 
   ngOnInit(): void {
     this.getAllBooks()
@@ -45,5 +46,12 @@ export class BooksComponent implements OnInit {
       this.Booklist = response.data
       this.countBooks = response.data.length
     })
+  }
+
+  quickview(book:any){
+    console.log(book)
+    localStorage.setItem('bookId', book._id);
+    console.log("bookId", book._id);
+    this.router.navigateByUrl('/dashboard/quickview')
   }
 }    

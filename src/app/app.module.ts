@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select';
+import {MatDividerModule} from '@angular/material/divider';
+import { AuthgaurdServiceService } from './service/authgaurd-service.service';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,12 +20,16 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './component/register/register.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { BooksComponent } from './component/books/books.component';
+import { QuickViewComponent } from './component/quick-view/quick-view.component';
+import { WishlistComponent } from './component/wishlist/wishlist.component';
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     DashboardComponent,
-    BooksComponent
+    BooksComponent,
+    QuickViewComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +44,12 @@ import { BooksComponent } from './component/books/books.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatToolbarModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDividerModule
   ],
-  providers: [],
+  providers: [
+    AuthgaurdServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,223 @@
+div { 
+
+.sideTwoImg { 
+    margin-bottom: 16%; 
+    margin-right: 3px; 
+    margin-top: 5%;
+
+	.image1 { 
+    border: 1px solid rgb(39, 1, 1); 
+    padding: 5px;
+    width: 30px;
+    height: 36px;
+
+	#img1 { 
+        height: 35px; 
+        width: 28px;
+    }
+}
+
+	.image2 { 
+     border: 1px solid black; 
+     padding: 5px;
+     width: 30px;
+    height: 36px;
+
+	#img2 { 
+    height: 35px; 
+     width: 28px;
+    }
+}
+}
+
+.imageContainer { 
+    margin-top: 5%;
+    //margin-right: -30px;
+.container { 
+    border: 1px solid darkgrey; 
+    width: 270px;
+    height: 300px;
+    justify-content: center;
+            @media screen and (max-width: 1000px) and (min-width: 300px) {
+                border: 1px solid darkgrey; 
+                width: 100%;
+            }
+
+			.image { 
+                width: 250px;
+                margin: 30px;
+                #img3 { 
+                    height: 247px;
+                    width: 224px   
+                 }
+			}
+
+		}
+
+		.buttonContainer { 
+            margin-top: 20px;
+
+div { 
+
+.addtobag { 
+    background: brown;
+    color: white;
+    width: 120px;
+    height: 30px;
+    text-transform: uppercase;
+}
+}
+
+.addtowishlist { 
+    background: black; 
+    color: white;
+
+	.wishlistbtn { 
+         background: black; 
+         color: white; 
+         width: 120px;
+         height: 30px;
+         text-transform: uppercase;
+
+		.wishlistIcon { 
+            font-size: 18px;
+            margin-top: 1.5px;
+        }
+    }
+}
+}
+}
+
+.bookDetails { 
+     margin-left: 5%; 
+     margin-bottom: 5%; 
+    margin-top: 5%;
+
+	div { 
+
+	.bookName { 
+         font-size: 20px; 
+          margin-bottom: 10px;
+        }
+
+			.author { 
+                color: grey; 
+                font-size: 15px; 
+                margin-bottom: 10px;
+
+			}
+
+			.rating { 
+                background: darkgreen;
+                height: 20px;
+                width: 40px;
+                color: white;
+                margin-bottom: 10px;
+
+				// span { 
+
+				// }
+
+				.starIcon { 
+                    font-size: 10px; 
+                    margin-top: 12px;
+
+				}
+			}
+
+			.prize { 
+                font-size: 20px;
+                margin-top: 10px;
+
+				.price { 
+                    font-weight: 600; 
+                    margin-bottom: 10px;
+
+				}
+
+				.discountprice {
+                    color: grey; 
+				}
+			}
+		}
+        div { 
+
+            .bookdesc { 
+                opacity: 0.7; 
+                margin-top: 20px; 
+                margin-bottom: 5px;
+        
+            }
+        
+            .paragraph { 
+                font-size: 15px;
+            }
+        }
+        
+
+		.divider { 
+            margin-top: 10px; 
+            width: 595px;
+
+		}
+        .customer
+        {
+            font-size: 18px; 
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .overallratin {
+            background: whitesmoke; 
+
+            .rate { 
+                margin-left: 15px;        
+                  
+            div { 
+
+                .submit { 
+                    margin-right: 35px; 
+                    margin-top: 20px; 
+                    margin-bottom: 20px; 
+            
+                }
+            }
+
+        }
+       
+
+        div { 
+
+            div { 
+                .MS{
+                    margin-left: -5px; 
+                    text-rendering: grey;
+                }
+    
+                .mayu { 
+                    font-size: 15px;
+                }
+            }
+        }
+}
+  .cont {
+    width: 93%;
+    max-width: 350px;
+    text-align: center;
+    // margin-top: 2px;
+    padding: 2px 0;
+    color: #EEE;
+    overflow: hidden;
+    margin-left:-90px;
+  }
+    
+    div.stars {
+    width: 270px;
+    display: inline-block;
+    transform: scale(0.6,0.6);
+  }
+  .feedback
+  {
+    margin-left: 20px; 
+  }
+}
+}

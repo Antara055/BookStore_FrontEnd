@@ -1,8 +1,8 @@
 .container{
     border: 1px solid lightgrey;
-    height: 40%;
-    width: 15%;
-    margin: 20px;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
     
     @media screen and (max-width: 1000px) and (min-width: 300px) {
       border: 1px solid lightgrey;
@@ -44,7 +44,7 @@
     font-weight: 600;
   }
   .image{
-    background: #E2E2E2;
+    background: #f1eeee;
     padding-top: 20px;
     padding-bottom: 20px;
   }

@@ -67,7 +67,7 @@ export class RegisterComponent implements OnInit {
        console.log(response);
        if(response.message == "Successfully logged in")
       {
-        this.router.navigateByUrl('/dashboard')
+        this.router.navigateByUrl('/dashboard/books')
       }
      })
     }
